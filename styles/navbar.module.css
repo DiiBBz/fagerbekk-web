@@ -16,6 +16,47 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.navlogo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+
+    position: static;
+    width: 139px;
+    height: 49px;
+    left: 24px;
+    top: 8px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.navlogo2 {
+    position: static;
+    width: 119px;
+    height: 29px;
+    left: 10px;
+    top: 10px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
 .navbar-menu {
     display: flex;
     flex-direction: row;
