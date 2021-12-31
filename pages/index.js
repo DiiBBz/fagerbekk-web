@@ -1,17 +1,13 @@
 import styles from '../styles/MainComp.module.css'
 import Image from 'next/image'
+import Carousel from '../components/carousel'
 
 export default function MainComp() {
   return (
     <>
       <div className={styles.main}>
           {/*Slider*/}
-          <Image
-          src="/images/profile.jpg"
-          alt="A picture of something"
-          width="488px"
-          height="366px"
-          />
+          <Carousel />
           {/*Text*/}
           <div className={styles.textSection}>
             <h1>Subtitle ftw</h1>
