@@ -1,5 +1,13 @@
-import styles from '../styles/layout.module.css'
+import styles from '../styles/Layout.module.css'
+import Navbar from './nav/navbar'
+import Head from 'next/head'
 
 export default function Layout({ children }) {
-    return <div className={styles.container}>{children}</div>
+    return <>
+        <Head>
+            <title>Fagerbekk</title>
+        </Head>
+        <Navbar />
+        {children}
+    </>
   }
