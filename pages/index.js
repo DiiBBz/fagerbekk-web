@@ -1,7 +1,7 @@
 import styles from '../styles/MainComp.module.css'
 import Carousel from '../components/carousel/carousel'
 
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 6;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function MainComp() {
@@ -12,15 +12,11 @@ export default function MainComp() {
           <Carousel slides={slides}/>
           {/*Text*/}
           <div className={styles.textSection}>
-            <h1 className={styles.subtitle}>Subtitle ftw</h1>
-            <p className={styles.subtitleText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Integer dui mauris, porta nec felis non, commodo fermentum velit.
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eget suscipit magna, at commodo dui.
-              Maecenas a finibus risus. In interdum elementum ante, a pretium elit pellentesque at. Suspendisse id rhoncus tortor, pellentesque molestie nisl.
-              Pellentesque posuere ornare lacus, et ultricies est ultricies in.
-              Nullam luctus, sapien a luctus tristique, est leo pellentesque nulla, vitae viverra nibh augue vel sapien.
-              Nulla elit lorem, luctus a malesuada in, tempus sit amet turpis.
-              Mauris lobortis mollis pharetra. Vivamus scelerisque ipsum nec neque mattis aliquet.
+            <h1 className={styles.subtitle}>Føniks</h1>
+            <p className={styles.subtitleText}>Føniks is a dog with black curly hair. He is a Spanish Water Dog
+            and as such should love water. However, when put into any kind of water he runs back on land.
+            The water in spain is not as cold as in Norway, and I think thats why he doesn't like swimming.
+            If only he was a Norwegian Water Dog instead.
             </p>
           </div>
       </div>

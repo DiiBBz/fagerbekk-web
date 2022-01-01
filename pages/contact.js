@@ -7,8 +7,8 @@ export default function MainComp() {
       <div className={styles.main}>
           {/*Image*/}
           <Image
-          src="/images/foniks.jpg"
-          width="488px"
+          src="/images/profile.png"
+          width="400px"
           height="400px"
           />
           {/*Text*/}
