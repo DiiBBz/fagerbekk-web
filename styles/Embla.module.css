@@ -1,10 +1,90 @@
 .embla {
-    overflow: hidden;
-  }
-  .embla__container {
-    display: flex;
-  }
-  .embla__slide {
-    position: relative;
-    flex: 0 0 100%;
-  }
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  position: static;
+  max-width: 550px;
+  height: 400px;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.embla__slide {
+  display:flex;
+  height:100%;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  min-width: 100%;
+}
+
+.embla__slide__inner {
+  position: relative;
+  overflow: hidden;
+  width: 488px;
+  height: 366px;
+}
+
+.embla__slide__img {
+  position: absolute;
+  display: block;
+  max-width: 488px;
+  max-height: 366px;
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.embla__dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-top: 10px;
+}
+.embla__dot {
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  display: flex;
+  align-items: center;
+}
+
+.embla__dot:after {
+  background-color: #afafaf;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  content: "";
+}
+
+.embla__dot.is-selected:after {
+  background-color: #636363;
+  opacity: 1;
+}

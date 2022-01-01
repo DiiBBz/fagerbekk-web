@@ -13,7 +13,7 @@ export default function Navbar({ children }) {
                 <Link href="/">Random</Link>
                 </li>
                 <li className={styles.navitem} >
-                    <Link href="/"><a className={styles.navcontact}>Contact</a></Link>
+                    <Link href="/contact"><a className={styles.navcontact}>Contact</a></Link>
                 </li>
             </ul>
         </nav>

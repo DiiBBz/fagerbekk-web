@@ -1,17 +1,19 @@
 import styles from '../styles/MainComp.module.css'
-import Image from 'next/image'
-import Carousel from '../components/carousel'
+import Carousel from '../components/carousel/carousel'
+
+const SLIDE_COUNT = 5;
+const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function MainComp() {
   return (
     <>
       <div className={styles.main}>
           {/*Slider*/}
-          <Carousel />
+          <Carousel slides={slides}/>
           {/*Text*/}
           <div className={styles.textSection}>
-            <h1>Subtitle ftw</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <h1 className={styles.subtitle}>Subtitle ftw</h1>
+            <p className={styles.subtitleText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Integer dui mauris, porta nec felis non, commodo fermentum velit.
               Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eget suscipit magna, at commodo dui.
               Maecenas a finibus risus. In interdum elementum ante, a pretium elit pellentesque at. Suspendisse id rhoncus tortor, pellentesque molestie nisl.
