@@ -10,6 +10,7 @@ export default function MainComp() {
           src="/images/profile.png"
           width="400px"
           height="400px"
+          alt="Profile"
           />
           {/*Text*/}
           <div className={styles.textSection}>
